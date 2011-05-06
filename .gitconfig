@@ -1,0 +1,12 @@
+[user]
+	name = Igor Ranieri Elland
+	email = igor.ranieri@gmail.com
+[alias]
+	co = !git checkout
+	a = !git add . -vA
+	p = !git pull && git push
+	c  = !git commit
+	all = !git add . -vA && git commit  && git pull && git push
+		t = !git commit -m "\"{Teste de Código} $(curl 'http://whatthecommit.com/' 2>/dev/null | grep '<p>' | sed -e 's/^...//')\""
+[core]
+	editor = mate -w
